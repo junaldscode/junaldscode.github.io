@@ -1,7 +1,37 @@
 <!DOCTYPE html>
 <html>
+<head>
+   <title>My Script</title>
+   <script type="text/javascript">
+
+      var perfectNumber = 12;
+
+      function checkApples(numApples)
+          {
+              if (numApples == perfectNumber)
+              {
+                     alert("You ate the perfect number of apples!");
+              }
+               else if (numApples > perfectNumber)
+              {
+                     alert("You ate way too many apples.");
+              }
+              else if (numApples < perfectNumber)
+              {
+                alert("You didn't eat enough apples.");
+              }
+          }
+
+</script>
+
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<h3>How many apples did you eat?</h3>
+<form method="POST" name="applesForm" onSubmit="checkApples(document.applesForm.numApples.value);">
+        <input type="text" name="numApples" id="numApples" />
+        <input type="Submit" name="Submit" />
+</form>
+
+
 </body>
 </html>
