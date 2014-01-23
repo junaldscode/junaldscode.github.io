@@ -4,21 +4,25 @@
    <title>My Script</title>
    <script type="text/javascript">
 
-      var perfectNumber = 12;
+      var perfectNumber = 5;
 
       function checkApples(numApples)
           {
               if (numApples == perfectNumber)
               {
-                     alert("You ate the perfect number of apples!");
+                     alert("Yes, you are right! He is not that cool! :-)");
               }
                else if (numApples > perfectNumber)
               {
-                     alert("You ate way too many apples.");
+                     alert("Are you kidding me?");
               }
               else if (numApples < perfectNumber)
               {
-                alert("You didn't eat enough apples.");
+                alert("You underestimated him.");
+              }
+              else
+              {
+                 alert("You don't know how to count?")
               }
           }
 
@@ -26,7 +30,7 @@
 
 </head>
 <body>
-<h3>How many apples did you eat?</h3>
+<h3>How cool is Richard? Rate 1-10.</h3>
 <form method="POST" name="applesForm" onSubmit="checkApples(document.applesForm.numApples.value);">
         <input type="text" name="numApples" id="numApples" />
         <input type="Submit" name="Submit" />
